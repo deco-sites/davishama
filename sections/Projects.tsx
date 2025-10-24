@@ -83,9 +83,8 @@ export default function Projects({
                       class="text-2xl md:mt-[25px] block md:w-[724px]"
                     >
                       <span
-                        class={`font-medium block md:inline mr-4 pl-[20px] sm:pl-0 pt-[16px] sm:pt-0 ${
-                          item.companyColor && `text-[${item.companyColor}]`
-                        }`}
+                        class={`font-medium block md:inline mr-4 pl-[20px] sm:pl-0 pt-[16px] sm:pt-0`}
+                        style={{ color: item.companyColor ?? '' }}
                       >
                         {item.company}
                       </span>
