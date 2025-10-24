@@ -3,14 +3,24 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
-
+import * as $ActiveLink from "./islands/ActiveLink.tsx";
+import * as $Animate from "./islands/Animate.tsx";
+import * as $CurrentPage from "./islands/CurrentPage.tsx";
+import * as $HeaderBg from "./islands/HeaderBg.tsx";
+import * as $Marquee from "./islands/Marquee.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
     "./routes/_app.tsx": $_app,
   },
-  islands: {},
+  islands: {
+    "./islands/ActiveLink.tsx": $ActiveLink,
+    "./islands/Animate.tsx": $Animate,
+    "./islands/CurrentPage.tsx": $CurrentPage,
+    "./islands/HeaderBg.tsx": $HeaderBg,
+    "./islands/Marquee.tsx": $Marquee,
+  },
   baseUrl: import.meta.url,
 } satisfies Manifest;
 

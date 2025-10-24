@@ -1,6 +1,55 @@
 {
   "name": "Home",
   "path": "/",
-  "sections": [],
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/ColorBar.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Header.tsx",
+        "avatar": "https://assets.decocache.com/davishama/aa157146-c895-4ced-b31e-087ddc54a531/face.jpg",
+        "links": [
+          {
+            "label": "Portfolio",
+            "href": "/portfolio"
+          },
+          {
+            "label": "About",
+            "href": "/about"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Hero.tsx",
+        "hi": "Hi",
+        "animatedIntro": {
+          "line1": "My name is",
+          "line2": "Davi Shamá",
+          "line3": "and this is the 3rd line"
+        },
+        "animatedIntroMobile": {
+          "line1": "My name is",
+          "line2": "Davi Shamá",
+          "line3": "and this is",
+          "line4": " the 3rd line"
+        },
+        "description": "Brief description"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Footer.tsx"
+      }
+    }
+  ],
   "__resolveType": "website/pages/Page.tsx"
 }
